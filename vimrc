@@ -99,8 +99,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'vim-scripts/indentpython.vim'
 
 " Markdown
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 
 call plug#end()
 
