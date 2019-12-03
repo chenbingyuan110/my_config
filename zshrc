@@ -125,3 +125,14 @@ alias ll='ls -lh'
 alias la='ls -lah'
 alias zrc='vim ~/.zshrc'
 alias vrc='vim ~/.vim/vimrc'
+
+
+
+##################################################
+# Autoupdate Configuration
+##################################################
+# Before Syncing, my_config.git should be cloned to ~/dev/my_config.git
+cd ~/dev/my_config
+git pull
+cp -f ~/dev/my_config/zshrc ~/.zshrc
+cp -f ~/dev/my_config/vimrc ~/.vim/vimrc
