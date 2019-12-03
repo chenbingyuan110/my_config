@@ -123,8 +123,8 @@ calc_update(){
 
 alias ll='ls -lh'
 alias la='ls -lah'
-alias zrc='vim ~/dev/my_config/zshrc'
-alias vrc='vim ~/dev/my_config/vimrc'
+alias zrc='cd ~/dev/my_config/ && vim ~/dev/my_config/zshrc'
+alias vrc='cd ~/dev/my_config/ && vim ~/dev/my_config/vimrc'
 alias config_update='zsh ~/dev/my_config/config_update.sh'
 
 
