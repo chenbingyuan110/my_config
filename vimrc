@@ -99,7 +99,6 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'vim-scripts/indentpython.vim'
 
 " Markdown
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 
 call plug#end()
 
@@ -135,5 +134,3 @@ let g:python_highlight_all = 1
 let g:python_slow_sync = 0
 
 
-" Vim Instant Markdown
-set shell=bash\ -i
