@@ -33,9 +33,6 @@ set indentexpr=
 set backspace=indent,eol,start
 set foldmethod=indent
 set foldlevel=99
-" let &t_SI = "\<Esc>]50;CursorSharp=1\x7"
-" let &t_SR = "\<Esc>]50;CursorSharp=2\x7"
-" let &t_EI = "\<Esc>]50;CursorSharp=0\x7"
 set laststatus=2
 set autochdir
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
