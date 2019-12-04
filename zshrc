@@ -63,16 +63,13 @@ if [[ "$(uname)" == "Darwin" ]]; then
 else
     export ZSH="/root/.oh-my-zsh"
     ZSH_THEME="powerlevel9k/powerlevel9k"
-    POWERLEVEL9K_MODE="default"
-    POWERLEVEL9K_DISABLE_RPROMPT=false
+    POWERLEVEL9K_MODE='awesome-patched'
+    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context dir vcs)
+    POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
     POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-    POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{white}%F{black} `date +%T` %f%k%F{white}%f "
-    # POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="▶ "
-    POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-    POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-    POWERLEVEL9K_COLOR_SCHEME='dark'
-    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv dir vcs)
-    POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm rvm background_jobs ram context)
+    POWERLEVEL9K_STATUS_VERBOSE=false
+    POWERLEVEL9K_TIME_FORMAT="%D{%H:%M \uE868  %d.%m.%y}"
+    export DEFAULT_USER="$USER"
 fi
 
 
