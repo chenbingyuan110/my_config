@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 export EMAIL_163_ADDRESS='cooper_linux@163.com'
 export EMAIL_163_PASSWORD='EqAXPt628LCYTq'
-export PATH=/usr/local/lib/nodejs/node-12.3.1-linux-x64/bin:$PATH
+export PATH=/usr/local/lib/nodejs/node-v12.3.1-linux-x64/bin:$PATH
 
 
 #################################################
