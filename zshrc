@@ -64,12 +64,11 @@ else
     export ZSH="/root/.oh-my-zsh"
     ZSH_THEME="powerlevel9k/powerlevel9k"
     POWERLEVEL9K_MODE='awesome-patched'
-    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context dir vcs)
+    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
     POWERLEVEL9K_PROMPT_ON_NEWLINE=true
     POWERLEVEL9K_STATUS_VERBOSE=false
     POWERLEVEL9K_TIME_FORMAT="%D{%H:%M \uE868  %d.%m.%y}"
-    export DEFAULT_USER="$USER"
 fi
 
 
