@@ -18,7 +18,7 @@ filetype on
 filetype indent on
 filetype plugin on
 filetype plugin indent on
-set mouse=a
+" set mouse=a
 set encoding=utf-8
 let &t_ut=''
 set expandtab
@@ -139,3 +139,4 @@ let g:python_slow_sync = 0
 
 " Markdown Preview
 let g:mkdp_auto_start = 1
+let g:vim_markdown_new_list_item_indent = 0
