@@ -123,6 +123,7 @@ nnoremap gr :YcmCompleter GoToReferences<CR>
 let g:ycm_autoclose_preview_window_after_completion=0
 let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_use_clangd = 0
+let g:ycm_filetype_blacklist={'notes': 1, 'markdown': 1, 'unite': 1, 'tagbar': 1, 'pandoc': 1, 'qf': 1, 'vimwiki': 1, 'text': 1, 'infolog': 1, 'mail': 1}
 if system('uname') == "Darwin"
     let g:ycm_python_interpreter_path = "/usr/local/bin/python3"
     let g:ycm_python_binary_path = "/usr/local/bin/python3"
