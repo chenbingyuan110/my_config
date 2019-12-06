@@ -84,7 +84,7 @@ map tx :r !figlet
 
 
 " For Markdown
-nnoremap <LEADER>` F\<Space>a`<Esc>f\<Space>i`<Esc>
+nnoremap <LEADER>` F' ' a`<Esc>f' 'i`<Esc>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
