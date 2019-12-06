@@ -139,4 +139,6 @@ let g:python_slow_sync = 0
 
 " Markdown Preview
 let g:mkdp_auto_start = 1
+
+" Vim-markdown
 let g:vim_markdown_new_list_item_indent = 0
