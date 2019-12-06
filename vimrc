@@ -99,6 +99,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'vim-scripts/indentpython.vim'
 
 " Markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 call plug#end()
 
