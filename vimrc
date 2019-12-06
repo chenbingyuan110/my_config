@@ -83,6 +83,10 @@ inoremap <C-x> <Esc>ea<C-x>s
 map tx :r !figlet 
 
 
+" For Markdown
+nnoremap <LEADER>` ea`<Esc>bi`<Esc>
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Plug List
 """"""""""""""""""""""""""""""""""""""""""""""""""
