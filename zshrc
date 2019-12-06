@@ -120,8 +120,8 @@ calc_update(){
 
 alias ll='ls -lh'
 alias la='ls -lah'
-alias zrc='cd ~/dev/my_config/ && vim ~/dev/my_config/zshrc && git add * && git commit -m "daily update" && git push'
-alias vrc='cd ~/dev/my_config/ && vim ~/dev/my_config/vimrc && git add * && git commit -m "daily update" && git push'
+alias zrc='cd ~/dev/my_config/ && vim ~/dev/my_config/zshrc && git add * && git commit -m "daily update" && git push && config_update'
+alias vrc='cd ~/dev/my_config/ && vim ~/dev/my_config/vimrc && git add * && git commit -m "daily update" && git push && config_update'
 alias config_update='zsh ~/dev/my_config/config_update.sh'
 
 
