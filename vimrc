@@ -134,4 +134,5 @@ endif
 let g:python_highlight_all = 1
 let g:python_slow_sync = 0
 
-
+" Markdown Preview
+let g:mkdp_auto_start = 1
