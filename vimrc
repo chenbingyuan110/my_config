@@ -87,6 +87,8 @@ map tx :r !figlet
 nnoremap <LEADER>` F a`<Esc>f i`<Esc>
 nnoremap ` ea`<Esc>bi`<Esc>
 
+" For Hexo Buildin tag
+inoremap kkn {% note %}{% endnote %}<Esc>F{i
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Plug List
