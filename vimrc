@@ -88,7 +88,7 @@ nnoremap <LEADER>` F a`<Esc>f i`<Esc>
 nnoremap ` ea`<Esc>bi`<Esc>
 
 " For Hexo Buildin tag
-inoremap kkn {% note %}{% endnote %}<Esc>F{i\n\n<Up>
+inoremap kkn {% note %}{% endnote %}<Esc>F{i<CR><CR><Up>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Plug List
