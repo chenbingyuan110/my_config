@@ -127,3 +127,28 @@ alias hexo_test='cd ~/blog/ && hexo clean && hexo generate && hexo server && cd 
 alias hexo_upload='cd ~/blog/ && git add . && git commit -m "daily update" && git push && cd -'
 
 
+##################################################
+# Zsh vi mode
+##################################################
+bindkey -v
+bindkey 'jj' vi-cmd-mode
+bindkey -M vicmd 'h' vi-insert
+bindkey -M vicmd 'H' vi-insert-bol
+bindkey -M vicmd 'i' up-line-or-history
+bindkey -M vicmd 'k' down-line-or-history
+bindkey -M vicmd 'j' vi-backward-char
+bindkey -M vicmd 'l' vi-forward-char
+bindkey -M vicmd 'J' vi-backward-blank-word
+bindkey -M vicmd 'L' vi-forward-blank-word
+bindkey -M vicmd '/' vi-repeat-search
+
+
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] || [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+  elif [[ ${KEYMAP} == main ]] || [[ ${KEYMAP} == viins ]] || [[ ${KEYMAP} = '' ]] || [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  fi
+}
+zle -N zle-keymap-select
+
