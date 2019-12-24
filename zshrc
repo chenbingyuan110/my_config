@@ -107,6 +107,9 @@ export PATH=/usr/local/lib/nodejs/node-v12.13.1-linux-x64/bin:$PATH
 # User defined function
 ##################################################
 
+# update .zshrc and .vim/vimrc
+zsh ~/dev/my_config/config_update.sh
+
 # update the calculation server ip config
 calc_update(){
   sed "15s/.*/    HostName $1/" <~/.ssh/config >~/.ssh/config_temp
