@@ -98,9 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # Environment Variable
 ##################################################
 
-export EMAIL_163_ADDRESS='cooper_linux@163.com'
-export EMAIL_163_PASSWORD='EqAXPt628LCYTq'
 export PATH=/usr/local/lib/nodejs/node-v12.13.1-linux-x64/bin:$PATH
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 
 #################################################
