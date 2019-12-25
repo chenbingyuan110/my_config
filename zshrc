@@ -62,14 +62,15 @@ if [[ "$(uname)" == "Darwin" ]]; then
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=('nvm' 'rvm' 'ram_joined' 'battery')
 else
     export ZSH="/root/.oh-my-zsh"
-    ZSH_THEME="powerlevel9k/powerlevel9k"
-    POWERLEVEL9K_MODE='awesome-patched'
-    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon virtualenv dir vcs)
-    POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
-    POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-    POWERLEVEL9K_STATUS_VERBOSE=false
-    POWERLEVEL9K_PYTHON_ICON='\ue1f0'
-    POWERLEVEL9K_TIME_FORMAT="%D{%H:%M \uE868  %d.%m.%y}"
+    ZSH_THEME="agnoster"
+    # ZSH_THEME="powerlevel9k/powerlevel9k"
+    # POWERLEVEL9K_MODE='awesome-patched'
+    # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon virtualenv dir vcs)
+    # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+    # POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+    # POWERLEVEL9K_STATUS_VERBOSE=false
+    # POWERLEVEL9K_PYTHON_ICON='\ue1f0'
+    # POWERLEVEL9K_TIME_FORMAT="%D{%H:%M \uE868  %d.%m.%y}"
 fi
 
 
