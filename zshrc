@@ -106,6 +106,7 @@ export LC_ALL=en_US.UTF-8
 export PATH=/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
 export PATH=/usr/local/opt/texinfo/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 #################################################
 # User defined function
