@@ -151,3 +151,7 @@ let g:mkdp_auto_start = 1
 
 " Vim-markdown
 let g:vim_markdown_new_list_item_indent = 0
+
+" emmit-vim
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
