@@ -91,7 +91,7 @@ nnoremap ` ea`<Esc>bi`<Esc>
 inoremap kkn {% note %}{% endnote %}<Esc>F{i<CR><CR><Up>
 
 " For emment-vim trigger key
-inoremap kky <C-Y>,
+inoremap kky <C-Y>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Plug List
