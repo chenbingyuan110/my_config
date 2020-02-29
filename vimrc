@@ -101,7 +101,8 @@ Plug 'connorholyday/vim-snazzy'
 
 " Auto Complete
 Plug 'Valloric/YouCompleteMe'
-Plug 'alvan/vim-closetag'
+" Plug 'alvan/vim-closetag'
+Plug 'mattn/emmet-vim'
 
 " Python
 Plug 'vim-scripts/indentpython.vim'
