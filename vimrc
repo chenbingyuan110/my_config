@@ -52,7 +52,7 @@ noremap - Nzz
 noremap <LEADER><CR> :nohlsearch<CR>
 
 inoremap jj <esc>
-map S :w<CR>
+map S :wa<CR>
 map Q :q<CR>
 map R :source $MYVIMRC<CR>
 
