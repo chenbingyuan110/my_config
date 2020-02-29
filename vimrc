@@ -90,6 +90,8 @@ nnoremap ` ea`<Esc>bi`<Esc>
 " For Hexo Buildin tag
 inoremap kkn {% note %}{% endnote %}<Esc>F{i<CR><CR><Up>
 
+" For emmet-vim
+inoremap kky <C-K>,
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Plug List
