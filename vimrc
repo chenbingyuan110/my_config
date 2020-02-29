@@ -102,8 +102,6 @@ Plug 'connorholyday/vim-snazzy'
 
 " Auto Complete
 Plug 'Valloric/YouCompleteMe'
-Plug 'alvan/vim-closetag'
-Plug 'mattn/emmet-vim'
 
 " Python
 Plug 'vim-scripts/indentpython.vim'
@@ -112,6 +110,11 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
+" Web development
+Plug 'alvan/vim-closetag'
+Plug 'mattn/emmet-vim'
+plug 'ap/vim-css-color'
 
 call plug#end()
 
