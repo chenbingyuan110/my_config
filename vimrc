@@ -114,7 +114,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 " Web development
 Plug 'alvan/vim-closetag'
 Plug 'mattn/emmet-vim'
-plug 'ap/vim-css-color'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
