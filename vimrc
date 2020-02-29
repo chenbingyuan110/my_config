@@ -101,7 +101,6 @@ Plug 'connorholyday/vim-snazzy'
 
 " Auto Complete
 Plug 'Valloric/YouCompleteMe'
-Plug 'sukima/xmledit'
 
 " Python
 Plug 'vim-scripts/indentpython.vim'
