@@ -51,7 +51,7 @@ noremap L 5l
 
 inoremap <C-j> <left>
 inoremap <C-l> <right>
-map <C-i> <up>
+inoremap <C-i> <up>
 inoremap <C-k> <down>
 
 noremap = nzz
