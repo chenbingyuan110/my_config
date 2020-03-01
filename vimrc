@@ -89,11 +89,9 @@ map tx :r !figlet
 
 
 " For Markdown
-nnoremap <LEADER>` F a`<Esc>f i`<Esc>
-nnoremap ` ea`<Esc>bi`<Esc>
-
-" For Hexo Buildin tag
-inoremap kkn {% note %}{% endnote %}<Esc>F{i<CR><CR><Up>
+autocmd FileType markdown nnoremap <LEADER>` F a`<Esc>f i`<Esc>
+autocmd FileType markdown nnoremap ` ea`<Esc>bi`<Esc>
+autocmd FileType markdown inoremap kkn {% note %}{% endnote %}<Esc>F{i<CR><CR><Up>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
