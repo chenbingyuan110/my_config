@@ -128,6 +128,7 @@ calc_update(){
   sed "15s/.*/    HostName $1/" <~/.ssh/config >~/.ssh/config_temp
   mv -f ~/.ssh/config_temp ~/.ssh/config
   rm -f config_temp
+  ssh-copy-id calc
 }
 
 ##################################################
