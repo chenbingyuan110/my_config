@@ -100,13 +100,19 @@ source $ZSH/oh-my-zsh.sh
 # Environment Variable
 ##################################################
 
-export PATH=/usr/local/lib/nodejs/node-v12.13.1-linux-x64/bin:$PATH
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-export PATH=/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7/bin:$PATH
-export PATH=/usr/local/mysql/bin:$PATH
-export PATH=/usr/local/opt/texinfo/bin:$PATH
-export PATH=/Users/chenbingyuan/bin:$PATH
+if [[ "$(uname)" == "Darwin" ]]; then
+  export PATH=/usr/local/lib/nodejs/node-v12.13.1-linux-x64/bin:$PATH
+  export LC_CTYPE=en_US.UTF-8
+  export LC_ALL=en_US.UTF-8
+  export PATH=/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7/bin:$PATH
+  export PATH=/usr/local/mysql/bin:$PATH
+  export PATH=/usr/local/opt/texinfo/bin:$PATH
+  export PATH=/Users/chenbingyuan/bin:$PATH
+else
+  export PATH=/opt/intel/bin:/opt/intel/compilers_and_libraries_2018.5.274/linux/bin/intel64:/opt/intel/compilers_and_libraries_2018.5.274/linux/mpi/intel64/bin:/root/opt/openmpi-4.0.0/bin/:$PATH
+fi
+
+
 
 #################################################
 # User defined function
