@@ -128,7 +128,26 @@ calc_update(){
   sed "15s/.*/    HostName $1/" <~/.ssh/config >~/.ssh/config_temp
   mv -f ~/.ssh/config_temp ~/.ssh/config
   rm -f config_temp
-  ssh-copy-id calc
+}
+calc-1_update(){
+  sed "26s/.*/    HostName $1/" <~/.ssh/config >~/.ssh/config_temp
+  mv -f ~/.ssh/config_temp ~/.ssh/config
+  rm -f config_temp
+}
+calc-2_update(){
+  sed "31s/.*/    HostName $1/" <~/.ssh/config >~/.ssh/config_temp
+  mv -f ~/.ssh/config_temp ~/.ssh/config
+  rm -f config_temp
+}
+calc-3_update(){
+  sed "36s/.*/    HostName $1/" <~/.ssh/config >~/.ssh/config_temp
+  mv -f ~/.ssh/config_temp ~/.ssh/config
+  rm -f config_temp
+}
+calc-4_update(){
+  sed "41s/.*/    HostName $1/" <~/.ssh/config >~/.ssh/config_temp
+  mv -f ~/.ssh/config_temp ~/.ssh/config
+  rm -f config_temp
 }
 
 ##################################################
