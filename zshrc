@@ -117,6 +117,15 @@ fi
 
 
 #################################################
+# Application needed
+##################################################
+
+# the fuck
+eval $(thefuck --alias)
+
+
+
+#################################################
 # User defined function
 ##################################################
 
@@ -161,7 +170,6 @@ alias vrc='cd ~/dev/my_config/ && vim ~/dev/my_config/vimrc && git add . && git 
 alias config_update='zsh ~/dev/my_config/config_update.sh'
 alias hexo_test='cd ~/blog/ && hexo clean && hexo generate && hexo server && cd -'
 alias hexo_upload='cd ~/blog/ && git add . && git commit -m "daily update" && git push && cd -'
-
 
 ##################################################
 # Zsh vi mode
