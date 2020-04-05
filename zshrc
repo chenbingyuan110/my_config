@@ -58,7 +58,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     POWERLEVEL9K_TIME_BACKGROUND="black"
     POWERLEVEL9K_TIME_FOREGROUND="249"
     POWERLEVEL9K_TIME_FORMAT="%D{%H:%M:%S} \UE12E"
-    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=('status' 'os_icon' 'virtualenv' 'todo' 'dir' 'vcs')
+    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=('status' 'os_icon' 'anaconda' 'virtualenv' 'todo' 'dir' 'vcs')
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=('nvm' 'rvm' 'ram_joined' 'battery')
 else
     export ZSH="/root/.oh-my-zsh"
