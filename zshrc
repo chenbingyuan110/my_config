@@ -160,8 +160,6 @@ calc-4_update(){
 }
 
 # auto search historical command
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
 
 ##################################################
 # Example aliases
