@@ -159,6 +159,10 @@ calc-4_update(){
   rm -f config_temp
 }
 
+# auto search historical command
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
 ##################################################
 # Example aliases
 ##################################################
