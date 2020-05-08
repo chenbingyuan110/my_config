@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # Environment Variable
 ##################################################
 
+export CHRMOE_PATH=$HOME/bin/chromedriver
+
 if [[ "$(uname)" == "Darwin" ]]; then
   export PATH=/usr/local/lib/nodejs/node-v12.13.1-linux-x64/bin:$PATH
   export LC_CTYPE=en_US.UTF-8
