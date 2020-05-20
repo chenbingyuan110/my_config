@@ -199,8 +199,6 @@ bindkey -M vicmd 'l' vi-forward-char
 bindkey -M vicmd 'J' vi-backward-blank-word
 bindkey -M vicmd 'L' vi-forward-blank-word
 bindkey -M vicmd '/' vi-repeat-search
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
 
 
 # function zle-keymap-select {
