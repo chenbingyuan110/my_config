@@ -191,6 +191,7 @@ let g:user_emmet_leader_key='<C-K>'
 autocmd vimenter * NERDTree | wincmd l
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map tt :NERDTreeToggle<CR>
+let g:NERDTreeWinSize=25
 let NERDTreeMapUpdir = "J"
 let NERDTreeMapOpenSplit = "O"
 let NERDTreeMapOpenVSplit = "o"
