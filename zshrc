@@ -77,7 +77,7 @@ eval $(thefuck --alias)
 ##################################################
 
 # update .zshrc and .vim/vimrc
-zsh ~/dev/my_config/config_update.sh
+zsh ~/dev/my_config/config_update.sh > /dev/null 2>&1 &
 
 # update the calculation server ip config
 calc_update(){
@@ -105,14 +105,6 @@ calc-4_update(){
   mv -f ~/.ssh/config_temp ~/.ssh/config
   rm -f config_temp
 }
-
-# auto search historical command
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey '^[[A' up-line-or-beginning-search # Up
-bindkey '^[[B' down-line-or-beginning-search # Down
 
 
 ##################################################
