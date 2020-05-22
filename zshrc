@@ -77,7 +77,7 @@ eval $(thefuck --alias)
 ##################################################
 
 # update .zshrc and .vim/vimrc
-zsh ~/dev/my_config/config_update.sh > /dev/null 2>&1 &
+zsh ~/dev/my_config/config_update.sh > /dev/null 2>&1
 
 # update the calculation server ip config
 calc_update(){
