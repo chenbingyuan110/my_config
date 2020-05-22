@@ -117,7 +117,7 @@ Plug 'mattn/emmet-vim'
 Plug 'ap/vim-css-color'
 
 " NERDTree
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
@@ -168,13 +168,14 @@ let g:user_emmet_leader_key='<C-K>'
 
 " nerdtree
 map tt :NERDTreeToggle<CR>
-let NERDTreeMapOpenExpl = ""
-let NERDTreeMapUpdir = ""
-let NERDTreeMapUpdirKeepOpen = "l"
-let NERDTreeMapOpenSplit = ""
-let NERDTreeOpenVSplit = ""
-let NERDTreeMapActivateNode = "i"
-let NERDTreeMapOpenInTab = "o"
-let NERDTreeMapPreview = ""
-let NERDTreeMapCloseDir = "n"
-let NERDTreeMapChangeRoot = "y"
+let NERDTreeMapUpdir = "J"
+let NERDTreeMapOpenSplit = "O"
+let NERDTreeMapOpenVSplit = "o"
+let NERDTreeMapActivateNode = "l"
+let NERDTreeMapOpenInTab = "t"
+let NERDTreeMapOpenTabSilent = "T"
+let NERDTreeMapCloseDir = "j"
+let NERDTreeMapChangeRoot = "L"
+let NERDTreeMapToggleHidden = "H"
+let NERDTreeMapJumpFirstChild = "I"
+let NERDTreeMapJumpLastChild = "K"
