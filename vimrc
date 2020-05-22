@@ -133,8 +133,9 @@ call plug#end()
 """""""""""""""""""""""""
 " Theme
 """""""""""""""""""""""""
-color snazzy
+let g:lightline = { 'colorscheme': 'snazzy' }
 let g:SnazzyTransparent = 1
+colorscheme snazzy
 
 
 """""""""""""""""""""""""
