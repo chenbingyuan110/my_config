@@ -187,7 +187,7 @@ let g:user_emmet_leader_key='<C-K>'
 """""""""""""""""""""""""
 " nerdtree
 """""""""""""""""""""""""
-autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree | wincmd l
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map tt :NERDTreeToggle<CR>
 let NERDTreeMapUpdir = "J"
