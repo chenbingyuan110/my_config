@@ -119,6 +119,7 @@ Plug 'ap/vim-css-color'
 " NERDTree
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
