@@ -128,11 +128,17 @@ call plug#end()
 " Plug Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
+
+"""""""""""""""""""""""""
 " Theme
+"""""""""""""""""""""""""
 color snazzy
 let g:SnazzyTransparent = 1
 
+
+"""""""""""""""""""""""""
 "  You Complete ME
+"""""""""""""""""""""""""
 nnoremap gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap g/ :YcmCompleter GetDoc<CR>
 nnoremap gt :YcmCompleter GetType<CR>
@@ -151,22 +157,38 @@ elseif system('uname') == "Linux"
 endif
 
 
+"""""""""""""""""""""""""
 " Python-syntax
+"""""""""""""""""""""""""
 let g:python_highlight_all = 1
 let g:python_slow_sync = 0
 
+
+"""""""""""""""""""""""""
 " Markdown Preview
+"""""""""""""""""""""""""
 let g:mkdp_auto_start = 1
 
+
+"""""""""""""""""""""""""
 " Vim-markdown
+"""""""""""""""""""""""""
 let g:vim_markdown_new_list_item_indent = 0
 
+
+"""""""""""""""""""""""""
 " emmet-vim
+"""""""""""""""""""""""""
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 let g:user_emmet_leader_key='<C-K>'
 
+
+"""""""""""""""""""""""""
 " nerdtree
+"""""""""""""""""""""""""
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map tt :NERDTreeToggle<CR>
 let NERDTreeMapUpdir = "J"
 let NERDTreeMapOpenSplit = "O"
@@ -179,3 +201,23 @@ let NERDTreeMapChangeRoot = "L"
 let NERDTreeMapToggleHidden = "H"
 let NERDTreeMapJumpFirstChild = "I"
 let NERDTreeMapJumpLastChild = "K"
+
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
