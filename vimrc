@@ -194,8 +194,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 map tt :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=25
 let NERDTreeMapUpdir = "J"
-let NERDTreeMapOpenSplit = "O"
-let NERDTreeMapOpenVSplit = "o"
+let NERDTreeMapOpenSplit = "o"
+let NERDTreeMapOpenVSplit = "O"
 let NERDTreeMapActivateNode = "l"
 let NERDTreeMapOpenInTab = "t"
 let NERDTreeMapOpenTabSilent = "T"
