@@ -114,8 +114,11 @@ calc-4_update(){
 # Example aliases
 ##################################################
 
-alias ll='ls -lh'
-alias la='ls -lah'
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 alias zrc='cd ~/dev/my_config/ && vim ~/dev/my_config/zshrc && git add . && git commit -m "daily update" && git push && config_update && cd -'
 alias vrc='cd ~/dev/my_config/ && vim ~/dev/my_config/vimrc && git add . && git commit -m "daily update" && git push && config_update && cd -'
 alias config_update='zsh ~/dev/my_config/config_update.sh'
