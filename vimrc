@@ -55,8 +55,6 @@ noremap <LEADER><CR> :nohlsearch<CR>
 
 inoremap jj <esc>
 map S :wa<CR>
-map Q :q<CR>
-map R :source $MYVIMRC<CR>
 
 map sl :set splitright<CR>:vsplit<CR>
 map sj :set nosplitright<CR>:vsplit<CR>
