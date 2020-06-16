@@ -111,7 +111,9 @@ calc-4_update(){
 # Example aliases
 ##################################################
 
-alias ls='lsd'
+if [[ "$(uname)" == "Darwin" ]]; then
+  alias ls='lsd'
+fi
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
