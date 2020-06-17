@@ -186,6 +186,14 @@ let g:user_emmet_leader_key='<C-K>'
 
 
 """""""""""""""""""""""""
+" bracey
+"""""""""""""""""""""""""
+let g:bracey_browser_command = "open -a 'Google Chrome' http://localhost:12123"
+let g:bracey_server_port = 12123
+
+
+
+"""""""""""""""""""""""""
 " nerdtree
 """""""""""""""""""""""""
 autocmd vimenter * NERDTree | wincmd l
