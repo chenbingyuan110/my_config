@@ -113,6 +113,7 @@ calc-4_update(){
 
 if [[ "$(uname)" == "Darwin" ]]; then
   alias ls='lsd'
+  alias ra='ranger'
 fi
 alias l='ls -l'
 alias la='ls -a'
