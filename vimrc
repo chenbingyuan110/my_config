@@ -53,7 +53,7 @@ noremap = nzz
 noremap - Nzz
 noremap <LEADER><CR> :nohlsearch<CR>
 
-inoremap <C-h> <esc>
+map <C-h> <esc>
 map S :wa<CR>
 
 map sl :set splitright<CR>:vsplit<CR>
