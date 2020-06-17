@@ -113,6 +113,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'alvan/vim-closetag'
 Plug 'mattn/emmet-vim'
 Plug 'ap/vim-css-color'
+Plug 'turbio/bracey.vim'
 
 " NERDTree
 Plug 'scrooloose/nerdtree'
