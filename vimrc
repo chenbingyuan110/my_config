@@ -53,8 +53,8 @@ noremap = nzz
 noremap - Nzz
 noremap <LEADER><CR> :nohlsearch<CR>
 
-inoremap <C-h> <esc>
-map <C-h> <esc>
+inoremap <C-j> <esc>
+map <C-j> <esc>
 map S :wa<CR>
 
 map sl :set splitright<CR>:vsplit<CR>
@@ -248,4 +248,4 @@ let g:multi_cursor_select_all_key      = 'g<A-n>'
 let g:multi_cursor_next_key            = '<C-n>'
 let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
-let g:multi_cursor_quit_key            = '<C-h>'
+let g:multi_cursor_quit_key            = '<C-j>'
