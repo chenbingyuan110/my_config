@@ -89,11 +89,6 @@ autocmd FileType markdown nnoremap <LEADER>` F a`<Esc>f i`<Esc>
 autocmd FileType markdown nnoremap ` ea`<Esc>bi`<Esc>
 autocmd FileType markdown inoremap kkn {% note %}{% endnote %}<Esc>F{i<CR><CR><Up>
 
-" my shortcuts
-inoremap }} }<Left><CR><Esc>O
-inoremap ]] ]<Left><CR><Esc>O
-
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Plug List
