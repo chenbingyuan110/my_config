@@ -59,6 +59,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export PATH=/Users/chenbingyuan/bin:$PATH
 else
   export PATH=/opt/intel/bin:/opt/intel/compilers_and_libraries_2018.5.274/linux/bin/intel64:/opt/intel/compilers_and_libraries_2018.5.274/linux/mpi/intel64/bin:/root/opt/openmpi-4.0.0/bin/:$PATH
+  export PATH=/Users/chenbingyuan/Library/Python/3.7/bin:$PATH
   export LD_LIBRARY_PATH=/opt/intel/mkl/lib/intel64:$LD_LIBRARY_PATH
   export LD_LIBRARY_PATH=/opt/intel/lib/intel64:$LD_LIBRARY_PATH
   export RANGER_LOAD_DEFAULT_RC=FALSE
